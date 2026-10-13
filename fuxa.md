@@ -304,6 +304,12 @@ sshpass -p 'wi3fw39w0j12e' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile
 Blob chứa private key root (ED25519) có hash:
 
 ```text
+5eabba81b7dc9671da29ba0f45f5b6735bf479f8 blob 399
+cbe10abbd6222a4fe029f5274aac4b35dfd65490 blob 32
+
+```
+sau đó ta chọn 1 Blob để thực hiện sshpass
+```text
 5eabba81b7dc9671da29ba0f45f5b6735bf479f8
 ```
 
