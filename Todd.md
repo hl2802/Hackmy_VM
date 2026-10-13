@@ -176,6 +176,10 @@ Lấy public key (copy **nguyên một dòng**, không cắt ngắn):
 ```bash
 cat /root/.ssh/id_ed25519.pub
 ```
+kết quả
+```text
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN6KkXliOQ4CYM1Y56QTyaP7VEVg8MVhq6R8rD5xRaue root@kali
+```
 
 ### 🟥 Todd (trong shell 7066)
 
@@ -187,9 +191,9 @@ chmod 700 /home/todd/.ssh
 Thêm public key (thay `PUBLIC_KEY_ĐẦY_ĐỦ` bằng nội dung thật từ `id_ed25519.pub`):
 
 ```bash
-echo 'PUBLIC_KEY_ĐẦY_ĐỦ' >> /home/todd/.ssh/authorized_keys
-chmod 600 /home/todd/.ssh/authorized_keys
-cat /home/todd/.ssh/authorized_keys
+echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN6KkXliOQ4CYM1Y56QTyaP7VEVg8MVhq6R8rD5xRaue root@kali' >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+cat ~/.ssh/authorized_keys
 ```
 
 Thoát shell 7066:

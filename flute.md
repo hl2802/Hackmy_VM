@@ -147,7 +147,7 @@ cat /home/hamelin/user.txt
 **User flag** (theo writeup mẫu, flag thực tế có thể khác):
 
 ```text
-HMVuser...  (lấy từ máy)
+HMVuser9f4ndbaz4chc6j04b3va
 ```
 
 ---
@@ -208,7 +208,11 @@ cat /home/hamelin/user.txt
 **Root flag** (theo writeup mẫu, flag thực tế có thể khác):
 
 ```text
-HMVroot...  (lấy từ máy)
+flute:~# cat /root/root.txt
+HMVrootoepsamqu0liphzzsc7x9
+flute:~# cat /home/hamelin/user.txt
+HMVuser9f4ndbaz4chc6j04b3va
+
 ```
 
 ---
