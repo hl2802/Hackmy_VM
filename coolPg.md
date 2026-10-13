@@ -159,7 +159,7 @@ HTML chứa:
 <!-- onboarding: ask IT for access -->
 ```
 
-Form đăng nhập:
+Hiển thị Form đăng nhập:
 
 ```html
 <form method="POST" action="/login">
@@ -171,7 +171,7 @@ với hai trường:
 username
 password
 ```
-
+==> suy đoán là có thể tấn công với phương thức sql injection 
 ---
 
 ## 2.2. Kiểm tra source HTML
